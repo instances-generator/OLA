@@ -65,6 +65,7 @@ Here is a dictionary of the generated variables found in the output files:
 | `I` | [Ops] | Binary vector: 1 if patient is infectious |
 | `L` | [Ops] | Binary vector: 1 if patient is allergic to latex |
 
+Room's blocks are supposed to follow the patern : of each groups of four rooms are in the same block
  
  ## 📂 Output Format
 
