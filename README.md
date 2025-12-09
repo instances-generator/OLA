@@ -80,3 +80,17 @@ Specific scheduling rules apply based on patient conditions:
 * **Infectious :** If a patient is flagged as infectious (High Resistant Bacteria), a deep cleaning (requiring more time) is necessary **after** their operation.
     * *Exception:* This extra cleaning time is skipped if the immediately following operation in the same room is also for an infectious patient.
 
+## 🧠 Integration with CPLEX
+
+The project includes an OPL model (`model.mod`) using **CP Optimizer** to solve the generated instances.
+
+### How to run a simulation:
+
+1.  **Generate Data:** Run the Python script. It produces `.txt` files in `generation_result/` containing valid OPL data syntax.
+2.  **Prepare the Data File:**
+    * Rename the generated `.txt` file to `.dat`.
+    * **OR** copy the content of the `.txt` file and paste it into a blank `.dat` file in your CPLEX project.
+3.  **Configure CPLEX:**
+    * Open **IBM ILOG CPLEX Optimization Studio**.
+    * Create a Run Configuration linking the provided `model.mod` and your new `.dat` file.
+4.  **Solve:** Run the configuration. The model includes a `main` block that will output the Makespan and Delay evolution in the scripting log.
