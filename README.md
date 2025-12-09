@@ -67,7 +67,6 @@ Here is a dictionary of the generated variables found in the output files:
 
 Room's blocks are supposed to follow the patern : of each groups of four rooms are in the same block
  
- ## 📂 Output Format
 
 
 # 🏥 Medical Constraints (Latex & Infectious)
