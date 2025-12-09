@@ -64,7 +64,9 @@ Here is a dictionary of the generated variables found in the output files:
 | `end_time` | [Surg] | Surgeon shift end time |
 | `I` | [Ops] | Binary vector: 1 if patient is infectious |
 | `L` | [Ops] | Binary vector: 1 if patient is allergic to latex |
-| `K` | [Ops][Patients]| Identity matrix linking operations to patients |## 📂 Output Format
+
+ 
+ ## 📂 Output Format
 
 
 # 🏥 Medical Constraints (Latex & Infectious)
