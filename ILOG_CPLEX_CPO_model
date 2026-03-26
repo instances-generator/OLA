@@ -80,7 +80,7 @@ dvar interval op_surgeon[o in Operations][s in Surgeons] optional size TC[o];
 // op_mat removed
 
 dvar sequence seq_rooms[r in Rooms] in all(o in Operations) op_room[o][r] types all(o in Operations) o;
-dvar sequence seq_surgeons[s in Surgeons] in all(o in Operations) op_surgeon[o][s];
+dvar sequence seq_surgeons[s in Surgeons] in all(o in Operations) op_surgeon[o][s] types all(o in Operations) o;;
 // seq_mat removed
 
 // --- OPTIMIZATION 2: Block Variable ---
