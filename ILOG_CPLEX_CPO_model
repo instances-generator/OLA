@@ -119,7 +119,7 @@ subject to {
     startOf(op_surgeon[o][s]) == startOf(op[o]) + TP[o];
   }
   
-  // Surgeons not involved (Cleaning/Other)
+  // Surgeons not involved
   forall(o in Operations, s in Surgeons : C[s][o] == 0)
     presenceOf(op_surgeon[o][s]) == 0;
 
